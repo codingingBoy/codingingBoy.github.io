@@ -1,14 +1,18 @@
 /*
-______ _            _   ______
-| ___ \ |          | |  |  _  \
-| |_/ / | __ _  ___| | _| | | |___   ___
-| ___ \ |/ _` |/ __| |/ / | | / _ \ / __|
-| |_/ / | (_| | (__|   <| |/ / (_) | (__
-\____/|_|\__,_|\___|_|\_\___/ \___/ \___|
-
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
  *
- * Designed, built, and released under MIT license by @karloespiritu.
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
  */
+
 
 /*
  * Contents
@@ -18,8 +22,8 @@ ______ _            _   ______
  * Container
  * Reverse layout
  * Themes
- * Scrollbar
  */
+
 
 /*
  * Global resets
@@ -30,111 +34,6 @@ ______ _            _   ______
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-
-body {
-  color: #848482;
-  background-color: #000000;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'EB Garamond', serif;
-  color: #aaa;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  font-family: 'EB Garamond', serif;
-  color: #50585d;
-  font-kerning: auto;
-  font-feature-settings: "kern", "liga", "dlig", "hlig", "cswh";
-  font-synthesis: weight style;
-}
-
-a {
-  color: #ffeb99;
-  transition: color ease 0.3s;
-}
-
-a:hover {
-  color: #caad00;
-}
-
-.btn {
-  display: inline-block;
-  padding: .25rem 1rem;
-  font-family: "PT Sans", sans-serif;
-  color: #ebcb8b;
-  border: .1rem solid #32343c;
-  border-radius: .1rem;
-}
-
-.btn:hover,
-.btn:focus {
-  color: #26282d;
-  background-color: #ebcb8b;
-  border-color: #ebcb8b;
-}
-
-strong,
-b {
-  color: #848471;
-}
-/* Code */
-
-code {
-  color: #993030;
-  white-space: pre-wrap;
-  background-color: #222;
-}
-
-pre {
-  background-color: #222;
-}
-
-pre {
-  white-space: pre;
-  overflow: auto !important;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: rgba(235, 242, 246, 0.29) 1px solid;
-  margin: 1.2em 0;
-  padding: 0;
-}
-
-blockquote {
-  color: #666;
-  border-left: .25rem solid #333;
-}
-
-td,
-th {
-  padding: .25rem .5rem;
-  border: 1px solid #333;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #222;
-}
-
-/* Pagination items can be `span`s or `a`s */
-.pagination-item {
-  border: 1px solid #444;
-}
-
 @media (min-width: 48em) {
   html {
     font-size: 16px;
@@ -146,38 +45,7 @@ tbody tr:nth-child(odd) th {
   }
 }
 
-/*
- * Messages
- *
- * Show alert messages to users. You may add it to single elements like a `<p>`,
- * or to a parent if there are multiple elements to show.
- */
 
-.message {
-  color: #bbb;
-  background-color: #333;
-}
-
-/* Gist */
-.gist-data {
-  background-color: #222 !important;
-  border-bottom: 1px solid #333 !important;
-}
-.gist .markdown-body {
-  color: #999 !important;
-}
-
-.gist .markdown-body pre {
-  background-color: #111 !important;
-}
-
-.gist-file {
-  border: 1px solid #333 !important;
-}
-
-.gist-meta {
-  background-color: #222 !important;
-}
 /*
  * Sidebar
  *
@@ -188,9 +56,8 @@ tbody tr:nth-child(odd) th {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255, 255, 255, .5);
-  background-color: #000;
-  overflow: auto;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -205,15 +72,15 @@ tbody tr:nth-child(odd) th {
 
 /* Sidebar links */
 .sidebar a {
-  color: #caad00;
+  color: #fff;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #caad00;
+  color: #fff;
   margin-top: 0;
-  font-family: 'Noto Serif', serif;
-  font-size: 2.25rem;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
 }
 
 /* Sidebar nav */
@@ -240,12 +107,13 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .sidebar-sticky {
-    /*    position: absolute;*/
-    right: 1rem;
+    position: absolute;
+    right:  1rem;
     bottom: 1rem;
-    left: 1rem;
+    left:   1rem;
   }
 }
+
 
 /* Container
  *
@@ -254,38 +122,25 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top: 4rem;
+  padding-top:    4rem;
   padding-bottom: 4rem;
 }
 
 @media (min-width: 48em) {
   .content {
-    max-width: 95%;
-    margin-left: 18rem;
-    margin-right: 0rem;
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 18rem;
-    margin-right: 0rem;
+    margin-left: 22rem;
+    margin-right: 4rem;
   }
 }
 
-/*
- * Posts and pages
- *
- * Each post is wrapped in `.post` and is used on default and post layouts. Each
- * page is wrapped in `.page` and is only used on the page layout.
- */
-
-/* Blog post or page title */
-.page-title,
-.post-title,
-.post-title a {
-  color: #caad00;
-}
 
 /*
  * Reverse layout
@@ -311,10 +166,12 @@ a.sidebar-nav-item:focus {
   }
 }
 
+
+
 /*
  * Themes
  *
- * BlackDoc includes optional themes to color the sidebar and links
+ * As of v1.1, Hyde includes optional themes to color the sidebar and links
  * within blog posts. To use, add the class of your choosing to the `body`.
  */
 
@@ -390,27 +247,4 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
-}
-
-/* Thin Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-button {
-  width: 8px;
-  height: 5px;
-}
-::-webkit-scrollbar-track {
-  background: #333;
-  border: thin solid #111;
-  /*box-shadow: 0px 0px 3px #111 inset;*/
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #222;
-  border: thin solid #222;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #7d7d7d;
 }
