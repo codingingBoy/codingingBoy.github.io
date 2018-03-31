@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Keep thingking and coding
+title:            codingBoy
 tagline:          ""
-description:      "null"
+description:      "Keep thingking and coding"
 url:              https://codingingboy.github.io
 
 author:
