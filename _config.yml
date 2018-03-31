@@ -1,9 +1,21 @@
-# Site settings
-title: BY Blog                    # 你的博客网站标题
-SEOTitle: 柏荧的博客 | BY Blog   # SEO 标题
-description: "Hey"         # 随便说点，描述一下
-url: "http://codingingBoy.github.io"
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
+# Setup
+title:            Keep thingking and coding
+tagline:          ""
+description:      "null"
+url:              https://codingingboy.github.io
 
+author:
+  name:           "coding boy"
 
-theme: jekyll-theme-slate
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/my-jekyll-site/page:num' if you want to move your index pages
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
