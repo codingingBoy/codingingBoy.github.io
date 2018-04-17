@@ -4,9 +4,8 @@
 # in case you're using github internal wiki option
 #
 
-git pull origin master
-cd wiki
-git pull origin master
-cd ..
-git commit -a -m "updated wiki"
-git push origin master
+cd ~/Blog
+git add --all
+git commit -m "update blog"
+git push
+
