@@ -2,6 +2,7 @@ title: codingBoy
 description: Keep thingking and coding
 show_downloads: true
 git_branch: master
+excerpt_separator: “<!-- more -->”
 logo_url:
 google_analytics:
 theme: 
@@ -12,7 +13,7 @@ google_cse_token:
 custom_head: false
 custom_sidebar: false
 custom_footer: false
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-mentions
   - jemoji

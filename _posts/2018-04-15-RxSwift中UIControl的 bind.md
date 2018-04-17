@@ -1,4 +1,16 @@
-##RxSwift中UIControl的 bind
+---
+
+layout: default
+title: RxSwift中UIControl的 bind
+tags: [RxSwfit]
+
+---
+
+RxSwift中UIControl 使用bind 绑定到controlEvent中出现的异常并分析原因
+<!-- more -->
+
+
+## RxSwift中UIControl的 bind
 
 ### bind操作符
 
