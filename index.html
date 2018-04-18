@@ -6,8 +6,9 @@ title: 首页
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><br>
-		{{ post.excerpt }}<br>
+      <a href="{{ post.url }}"><big>{{ post.title }}</big></a>
+      <p>{{ post.excerpt }}</p>
+      <br />
     </li>
   {% endfor %}
 </ul>
