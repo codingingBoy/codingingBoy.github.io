@@ -13,9 +13,14 @@ google_cse_token:
 custom_head: false
 custom_sidebar: false
 custom_footer: false
+
+paginate: 20
+paginate_path: "/Blog/page:num/"
+
 plugins:
   - jekyll-sitemap
   - jekyll-mentions
   - jemoji
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-paginate
