@@ -109,6 +109,24 @@ class TestViewController: UIViewController {
 
 在ViewController页面触发 `send()` 方法时，进入 `TestViewController` 页面，点击 `button` 时，收到next事件，控制台输出 "tap"，当退出`TestViewController`页面时，`button` 释放，此时会发送`onCompleted`， `onDispose` 事件，也会被`sendText`的订阅收到，`sendText` 事件也就结束了，显然这不是义务场景上正常的做法。
 
+
+<p align="center">
+<img src="/assets/images/RxControlEvent_dispose.png" width ="500">
+</p>
+<p align="center">
+Debug 堆栈1
+</p>
+
+<p align="center">
+<img src="/assets/images/RxControlEvent_complete.png" width ="500">
+</p>
+<p align="center">
+Debug 堆栈2
+</p>
+
+
+
+
 从debug堆栈信息可以看到，由于`TestViewController`的释放，导致`button`释放，触发了`button`绑定的点击事件的dispose。这一点可以从 `vc.button.rx.tap` 中 `tap` 方法的实现来看：
 
 ```

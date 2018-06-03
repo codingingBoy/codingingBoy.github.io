@@ -1,0 +1,14 @@
+---
+
+layout: default
+title: TensorFlow特征列
+---
+
+
+TensorFlow的特征列是输入某条（或者说行）数据与模型输入之间的桥梁，让输入数据变成模型可处理的数据格式。模型输入一般要求的是数量格式，但原始数据可能多种多样，比如产品的分类包括如下三种：kitchenware、electronics、sports，用product_class来表示，[0, 0, 1]就可以标示：
+0: kitchenware is absent
+0: electronics is absent
+1: sports is present
+
+通过这种方式，可以将分类信息转换为数据量
+
