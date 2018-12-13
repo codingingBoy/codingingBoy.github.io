@@ -1,3 +1,13 @@
+---
+
+layout: default
+title: Metal TextureCoordinate
+
+---
+Metal TextureCoordinate
+<!-- more -->
+
+
 ## Metal TextureCoordinate
 
 Metal 绘制纹理MTLTexture 时需要用到 MTLTextureCoordinate，本篇主要介绍 MTLTextureCoordinate 的功能，并结合实例中可能出现的问题。
