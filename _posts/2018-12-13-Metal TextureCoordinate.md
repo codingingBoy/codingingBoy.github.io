@@ -4,7 +4,7 @@ layout: default
 title: Metal TextureCoordinate
 
 ---
-本篇主要介绍 MTLTextureCoordinate 的功能，并结合实例中可能出现的问题。
+介绍 MTLTextureCoordinate 的功能，结合实例中可能出现的问题。
 <!-- more -->
 
 
